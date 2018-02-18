@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { Actions } from 'react-native-router-flux';
+import { View } from 'react-native';
 import { Header, Card, Input, CardSection } from './Components/common';
 
-class MyAccount extends Component {
+class SetLimit extends Component {
   render() {
     return (
       <View>
@@ -21,4 +20,4 @@ class MyAccount extends Component {
   }
 }
 
-export default MyAccount;
+export { SetLimit };

@@ -12,7 +12,7 @@ class InitialPage extends Component {
         <MoneyDonated />
         <Card>
           <CardSection>
-            <Button whenPressed={() => Actions.info()} >
+            <Button whenPressed={() => Actions.myAccount()} >
               My Account
             </Button>
           </CardSection>
@@ -22,4 +22,4 @@ class InitialPage extends Component {
   }
 }
 
-export default InitialPage;
+export { InitialPage };

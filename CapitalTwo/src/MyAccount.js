@@ -10,17 +10,17 @@ class MyAccount extends Component {
         <Header headerText="My Account" />
         <Card>
           <CardSection>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => Actions.organizations()}>
               <Text>Organizations</Text>
             </TouchableOpacity>
           </CardSection>
           <CardSection>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => Actions.setLimit()}>
               <Text>Set Limit</Text>
             </TouchableOpacity>
           </CardSection>
           <CardSection>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => Actions.info()}>
               <Text>User Info</Text>
             </TouchableOpacity>
           </CardSection>
@@ -30,4 +30,4 @@ class MyAccount extends Component {
   }
 }
 
-export default MyAccount;
+export { MyAccount };

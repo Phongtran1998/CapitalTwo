@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Scene } from 'react-native-router-flux';
-import Info from './Info';
-import InitialPage from './InitialPage';
+import { Info, InitialPage, MyAccount, Organizations, SetLimit } from './';
+
 
 const App = () => {
   return (
@@ -13,8 +13,20 @@ const App = () => {
         initial
         />
         <Scene
+          key="myAccount"
+          component={MyAccount}
+        />
+        <Scene
           key="info"
           component={Info}
+        />
+        <Scene
+          key="organizations"
+          component={Organizations}
+        />
+        <Scene
+          key="setLimit"
+          component={SetLimit}
         />
       </Scene>
     </Router>

@@ -26,4 +26,4 @@ class Organizations extends Component {
   }
 }
 
-export default Organizations;
+export { Organizations };
