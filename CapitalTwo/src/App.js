@@ -5,16 +5,18 @@ import InitialPage from './InitialPage';
 
 const App = () => {
   return (
-    <Router>
+    <Router showNavigationBar={false}>
       <Scene key="root">
         <Scene
         key="initial"
         component={InitialPage}
+        hideNavBar={true}
         initial
         />
         <Scene
           key="info"
           component={Info}
+          title="My Account"
         />
       </Scene>
     </Router>

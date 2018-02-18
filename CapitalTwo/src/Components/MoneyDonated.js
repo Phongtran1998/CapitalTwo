@@ -1,18 +1,28 @@
 import React from 'react';
-import { Text } from 'react-native';
+import {Text, View} from 'react-native';
 
 const MoneyDonated = () => {
   return (
-    <Text style={styles.titleText}>$8432</Text>
+    <View>
+      <Text style={styles.titleLittleText}>You donated</Text>
+      <Text style={styles.titleText}>$8,432</Text>
+    </View>
   );
 };
 
-  const styles = {
+const styles = {
   titleText: {
-    fontSize: 30,
+    fontSize: 60,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 250,
+    marginTop: 6,
+  },
+
+  titleLittleText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 220,
   }
 };
 

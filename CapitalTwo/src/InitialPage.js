@@ -1,25 +1,48 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import {StyleSheet, View, ImageBackground} from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import { Header, Card, Button, CardSection } from './Components/common';
+import { Header, Card, CardSection, Text } from './Components/common';
 import MoneyDonated from './Components/MoneyDonated';
+import {WideButton} from "./Components/common/WideButton";
 
 class InitialPage extends Component {
   render() {
     return (
-      <View>
-        <Header headerText="CharitalOne" />
-        <MoneyDonated />
-        <Card>
-          <CardSection>
-            <Button whenPressed={() => Actions.info()} >
+        <ImageBackground source={require('./static/images/background.jpg')}
+                         style={styles.backgroundImage}>
+
+
+
+        {/*<Header headerText="CharitalOne" />*/}
+        {/*<Card>*/}
+          {/*<CardSection>*/}
+            <WideButton
+              whenPressed={() => Actions.info()}
+              >
               My Account
-            </Button>
-          </CardSection>
-        </Card>
-      </View>
+            </WideButton>
+          <MoneyDonated />
+
+          {/*</CardSection>*/}
+        {/*</Card>*/}
+        </ImageBackground>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: null,
+    height: null
+  },
+
+  text: {
+    textAlign: 'center',
+    color: 'white',
+    backgroundColor: 'rgba(0,0,0,0)',
+    fontSize: 32
+  }
+});
 
 export default InitialPage;
