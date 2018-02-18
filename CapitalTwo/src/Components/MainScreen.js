@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
-import { Card, CardSection } from './common';
 import MainScreenDetail from './MainScreenDetail';
 
 class MainScreen extends Component {

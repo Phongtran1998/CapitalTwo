@@ -1,32 +1,32 @@
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import { Header, Card, CardSection } from './Components/common';
+
 
 class MyAccount extends Component {
   render() {
     return (
-      <View style = {styles.MainContainer}>
+      <View style={styles.MainContainer}>
         {/*<Header headerText="My Account" />*/}
-        <View style = {styles.List}>
-          <View style = {styles.ListItemBright}>
+        <View style={styles.List}>
+          <View style={styles.ListItemBright}>
             <TouchableOpacity onPress={() => Actions.organizations()}>
-              <Text style = {styles.ListItemText}>Add New Organization</Text>
+              <Text style={styles.ListItemText}>Add New Organization</Text>
             </TouchableOpacity>
           </View>
-          <View style = {styles.ListItem}>
+          <View style={styles.ListItem}>
             <TouchableOpacity onPress={() => Actions.info()}>
-              <Text style = {styles.ListItemText}>User Info</Text>
+              <Text style={styles.ListItemText}>User Info</Text>
             </TouchableOpacity>
           </View>
-          <View style = {styles.ListItem}>
+          <View style={styles.ListItem}>
             <TouchableOpacity onPress={() => Actions.organizations()}>
-              <Text style = {styles.ListItemText}>My Charitable Organizations</Text>
+              <Text style={styles.ListItemText}>My Charitable Organizations</Text>
             </TouchableOpacity>
           </View>
-          <View style = {styles.ListItem}>
+          <View style={styles.ListItem}>
             <TouchableOpacity onPress={() => Actions.setLimit()}>
-              <Text style = {styles.ListItemText}>Set Limit</Text>
+              <Text style={styles.ListItemText}>Set Limit</Text>
             </TouchableOpacity>
           </View>
 
@@ -60,7 +60,7 @@ const styles = StyleSheet.create(
       padding: 10,
       // marginTop: 10,
       // marginRight: 5
-      backgroundColor: "rgba(230, 145, 83, .8)"
+      backgroundColor: 'rgba(230, 145, 83, .8)'
     },
 
     ListItemText: {
@@ -84,7 +84,7 @@ const styles = StyleSheet.create(
       padding: 10,
       // marginTop: 10,
       // marginRight: 5
-      backgroundColor: "rgba(230, 145, 83, 1)"
+      backgroundColor: 'rgba(230, 145, 83, 1)'
     },
 
     MainContainer:
@@ -104,4 +104,5 @@ const styles = StyleSheet.create(
     }
 
   });
+  
 export { MyAccount };

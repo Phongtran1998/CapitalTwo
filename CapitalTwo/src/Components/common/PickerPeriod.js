@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { View, Picker, StyleSheet } from 'react-native';
+import { View, Picker } from 'react-native';
 
 class PickerPeriod extends Component {
    state = { user: '' }
    updateUser = (user) => {
-      this.setState({ user: user })
+      this.setState({ user: user });
    }
    render() {
       return (
@@ -19,11 +19,3 @@ class PickerPeriod extends Component {
    }
 }
 export { PickerPeriod };
-
-const styles = StyleSheet.create({
-   text: {
-      fontSize: 30,
-      alignSelf: 'center',
-      color: 'red'
-   }
-});
