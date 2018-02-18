@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {StyleSheet, View} from 'react-native';
 import { Header } from './Components/common';
 import MainScreen from './Components/MainScreen';
+import MoneyDonated from './MoneyDonated';
 
 
 class Info extends Component {
@@ -10,6 +11,7 @@ class Info extends Component {
       <View style = {styles.MainContainer}>
         {/*<Header headerText="Info" />*/}
         <MainScreen />
+        <MoneyDonated />
       </View>
     );
   }
