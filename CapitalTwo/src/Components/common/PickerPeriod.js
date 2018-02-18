@@ -10,6 +10,7 @@ class PickerPeriod extends Component {
       return (
          <View>
             <Picker selectedValue={this.state.user} onValueChange={this.updateUser}>
+               <Picker.Item label="Choose period.." value="" />
                <Picker.Item label="Annually" value="annually" />
                <Picker.Item label="Monthly" value="monthly" />
                <Picker.Item label="Weekly" value="weekly" />

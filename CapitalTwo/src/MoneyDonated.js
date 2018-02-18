@@ -18,7 +18,7 @@ class MoneyDonated extends React.Component {
 
   render() {
     return (
-      <View>
+      <View style={{paddingLeft: 10}}>
         {this.renderAPIText()}
       </View>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, ImageBackground } from 'react-native';
+import {StyleSheet, ImageBackground, Text} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import MoneyDonated from './Components/MoneyDonated';
 import { WideButton } from './Components/common/WideButton';
@@ -21,6 +21,7 @@ class InitialPage extends Component {
             >
               My Account
             </WideButton>
+          <Text style={styles.Title}>CharitalOne</Text>
           <MoneyDonated />
 
           {/*</CardSection>*/}
@@ -35,6 +36,17 @@ const styles = StyleSheet.create({
     flex: 1,
     width: null,
     height: null
+  },
+
+  Title: {
+    fontSize: 46,
+    fontWeight: '500',
+    paddingTop: 60,
+    textAlign: 'center',
+    color: 'rgba(230, 145, 83, 1)',
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 30
   },
 
   text: {

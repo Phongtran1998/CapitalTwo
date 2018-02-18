@@ -3,31 +3,35 @@ import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 
-class MyAccount extends Component {
+class MyOrganizations extends Component {
   render() {
     return (
       <View style={styles.MainContainer}>
         {/*<Header headerText="My Account" />*/}
         <View style={styles.List}>
-          <View style={styles.ListItemBright}>
-            <TouchableOpacity onPress={() => Actions.newOrganizations()}>
-              <Text style={styles.ListItemText}>Add New Organization</Text>
-            </TouchableOpacity>
+          <View style={styles.ListItem}>
+            {/*<TouchableOpacity onPress={() => Actions.newOrganizations()}>*/}
+              <Text style={styles.ListItemText}>The Salvation Army</Text>
+            <Text>Edit</Text>
+            {/*</TouchableOpacity>*/}
           </View>
           <View style={styles.ListItem}>
-            <TouchableOpacity onPress={() => Actions.info()}>
-              <Text style={styles.ListItemText}>User Info</Text>
-            </TouchableOpacity>
+            {/*<TouchableOpacity onPress={() => Actions.info()}>*/}
+              <Text style={styles.ListItemText}>GuideStar</Text>
+            <Text>Edit</Text>
+            {/*</TouchableOpacity>*/}
           </View>
           <View style={styles.ListItem}>
-            <TouchableOpacity onPress={() => Actions.myOrganizations()}>
-              <Text style={styles.ListItemText}>My Charitable Organizations</Text>
-            </TouchableOpacity>
+            {/*<TouchableOpacity onPress={() => Actions.organizations()}>*/}
+              <Text style={styles.ListItemText}>American Cancer Society</Text>
+            <Text>Edit</Text>
+            {/*</TouchableOpacity>*/}
           </View>
           <View style={styles.ListItem}>
-            <TouchableOpacity onPress={() => Actions.setLimit()}>
-              <Text style={styles.ListItemText}>Set Limit</Text>
-            </TouchableOpacity>
+            {/*<TouchableOpacity onPress={() => Actions.setLimit()}>*/}
+              <Text style={styles.ListItemText}>Direct Relief</Text>
+            <Text>Edit</Text>
+            {/*</TouchableOpacity>*/}
           </View>
 
         </View>
@@ -60,7 +64,7 @@ const styles = StyleSheet.create(
       padding: 10,
       // marginTop: 10,
       // marginRight: 5
-      backgroundColor: 'rgba(230, 145, 83, .8)'
+      backgroundColor: 'rgba(230, 145, 83, .7)'
     },
 
     ListItemText: {
@@ -105,4 +109,4 @@ const styles = StyleSheet.create(
 
   });
   
-export { MyAccount };
+export { MyOrganizations };

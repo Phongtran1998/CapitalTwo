@@ -22,7 +22,7 @@ const styles = {
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 220,
+    marginTop: 120,
   }
 };
 

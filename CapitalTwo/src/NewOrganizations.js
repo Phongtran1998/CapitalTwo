@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import {Text, View} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
-import { Button, CardSection,
-  Header, Card, PickerExample, Input, PickerPeriod } from './Components/common';
+import {
+  Button, CardSection,
+  Header, Card, PickerExample, Input, PickerPeriod, WideButton
+} from './Components/common';
 
-class Organizations extends Component {
+class NewOrganizations extends Component {
   state={ amount: 0, info: [] };
   onbuttonPress() {
     axios.post('http://api.reimaginebanking.com/accounts/5a87a87f5eaa612c093b0f21/withdrawals?key=6fbd1fec8587a95c4a307cc0283da47e', {
@@ -31,20 +33,22 @@ class Organizations extends Component {
           <CardSection>
             <Input
               placeholder="Amount"
-              label="Donation  $"
+              label="Donation:"
               onChangeText={(amount) => this.setState({ amount })}
             />
           </CardSection>
-          <CardSection>
-            <Button whenPressed={() => this.onbuttonPress()}>Donate</Button>
-          </CardSection>
-          <CardSection>
-            <Button whenPressed={() => Actions.initial()}>Stop Donating</Button>
-          </CardSection>
         </Card>
+
+        {/*<CardSection>*/}
+            <WideButton whenPressed={() => this.onbuttonPress()}>Add and Donate</WideButton>
+        <Text> </Text>
+          {/*</CardSection>*/}
+          {/*<CardSection>*/}
+            <WideButton whenPressed={() => Actions.initial()}>Stop Donating</WideButton>
+          {/*</CardSection>*/}
       </View>
     );
   }
 }
 
-export { Organizations };
+export { NewOrganizations };
