@@ -36,6 +36,7 @@ const App = () => {
         <Scene
           key="setLimit"
           component={SetLimit}
+          title="Set Limit"
         />
       </Scene>
     </Router>

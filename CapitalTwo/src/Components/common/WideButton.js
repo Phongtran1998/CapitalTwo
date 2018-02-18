@@ -16,8 +16,8 @@ const styles = {
       width: null,
       height: 65,
       borderColor: "transparent",
-      borderWidth: 0,
-      borderRadius: 5
+      borderWidth: 0
+      // borderRadius: 5
     },
     textStyle: {
         alignSelf: 'center',
