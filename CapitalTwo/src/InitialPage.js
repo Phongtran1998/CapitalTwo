@@ -3,12 +3,12 @@ import {StyleSheet, View, ImageBackground} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { Header, Card, CardSection, Text } from './Components/common';
 import MoneyDonated from './Components/MoneyDonated';
-import {WideButton} from "./Components/common/WideButton";
+import {WideButton} from './Components/common/WideButton';
 
 class InitialPage extends Component {
   render() {
     return (
-        <ImageBackground source={require('./static/images/background.jpg')}
+        <ImageBackground source={require('../static/images/background.jpg')}
                          style={styles.backgroundImage}>
 
 
