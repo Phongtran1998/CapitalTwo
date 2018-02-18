@@ -12,10 +12,10 @@ const WideButton = ({ whenPressed, children }) => {
 
 const styles = {
     buttonStyle: {
-      backgroundColor: "rgba(230, 145, 83, .8)",
+      backgroundColor: 'rgba(230, 145, 83, .8)',
       width: null,
       height: 65,
-      borderColor: "transparent",
+      borderColor: 'transparent',
       borderWidth: 0,
       borderRadius: 5
     },

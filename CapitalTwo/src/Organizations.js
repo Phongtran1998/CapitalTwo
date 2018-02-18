@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
 import { Button, CardSection,
   Header, Card, PickerExample, Input, PickerPeriod } from './Components/common';
@@ -37,7 +38,9 @@ class Organizations extends Component {
           <CardSection>
             <Button whenPressed={() => this.onbuttonPress()}>Donate</Button>
           </CardSection>
-          <Text>{this.state.amount}</Text>
+          <CardSection>
+            <Button whenPressed={() => Actions.initial()}>Stop Donating</Button>
+          </CardSection>
         </Card>
       </View>
     );
