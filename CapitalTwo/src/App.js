@@ -21,15 +21,17 @@ const App = () => {
         <Scene
           key="myaccount"
           component={MyAccount}
+          title="My Account"
         />
         <Scene
           key="info"
           component={Info}
-          title="My Account"
+          title="My Info"
         />
         <Scene
           key="organizations"
           component={Organizations}
+          title="My Charitable Organizations"
         />
         <Scene
           key="setLimit"
