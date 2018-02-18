@@ -1,22 +1,20 @@
 import React from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 import Info from './Info';
-import Test from './Test';
+import InitialPage from './InitialPage';
 
 const App = () => {
   return (
     <Router>
       <Scene key="root">
         <Scene
-        key="info"
-        component={Info}
-        title="Info"
+        key="initial"
+        component={InitialPage}
         initial
         />
         <Scene
-          key="test"
-          component={Test}
-          title="Test"
+          key="info"
+          component={Info}
         />
       </Scene>
     </Router>
