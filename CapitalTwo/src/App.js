@@ -6,6 +6,8 @@ import { InitialPage } from './InitialPage';
 import { MyAccount } from './MyAccount';
 import { Organizations } from './Organizations';
 import { SetLimit } from './SetLimit';
+import {NewOrganizations} from "./NewOrganizations";
+import {MyOrganizations} from "./MyOrganizations";
 
 
 const App = () => {
@@ -29,13 +31,19 @@ const App = () => {
           title="My Info"
         />
         <Scene
-          key="organizations"
-          component={Organizations}
+          key="myOrganizations"
+          component={MyOrganizations}
           title="My Charitable Organizations"
+        />
+        <Scene
+          key="newOrganizations"
+          component={NewOrganizations}
+          title="Add New Organization"
         />
         <Scene
           key="setLimit"
           component={SetLimit}
+          title="Set Limit"
         />
       </Scene>
     </Router>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
 import MoneyDonatedDetail from './MoneyDonatedDetail';
 
@@ -18,7 +18,7 @@ class MoneyDonated extends React.Component {
 
   render() {
     return (
-      <View>
+      <View style={{paddingLeft: 10}}>
         {this.renderAPIText()}
       </View>
     );

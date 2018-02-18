@@ -28,12 +28,13 @@ const styles = {
         flex: 2,
     },
     labelStyle: {
-        fontSize: 18,
+        fontSize: 20,
+      fontWeight: '500',
         paddingLeft: 20,
         flex: 1
     },
     containerStyle: {
-        height: 40,
+        height: 100,
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center'

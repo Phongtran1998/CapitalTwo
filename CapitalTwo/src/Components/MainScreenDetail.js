@@ -1,7 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, ScrollView } from 'react-native';
 import { Card, CardSection } from './common';
+<<<<<<< HEAD
 import MoneyDonated from './MoneyDonated';
+=======
+import MoneyDonated from '../MoneyDonated';
+>>>>>>> 2a0cf1c545d2dfed7b5d32dd72e4db2ad86c03a7
 
 const MainScreenDetail = ({ apiText }) => {
   const { balance, nickname, type } = apiText;
@@ -31,6 +35,7 @@ const MainScreenDetail = ({ apiText }) => {
           <Text style = {styles.Title}>Recent Donations:</Text>
           <MoneyDonated />
         </View>
+
       </CardSection>
     </Card>
   );
